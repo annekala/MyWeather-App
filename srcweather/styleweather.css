@@ -52,3 +52,7 @@ h3 {
   position: relative;
   top: -34px;
 }
+
+.codes {
+  display: block;
+}
