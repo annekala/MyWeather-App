@@ -1,0 +1,54 @@
+h1 {
+  position: fixed;
+  top: 150px;
+  right: 450px;
+}
+h2 {
+  position: fixed;
+  top: 200px;
+  right: 450px;
+}
+
+h3 {
+  position: fixed;
+  top: 250px;
+  right: 450px;
+}
+.clouds {
+  position: fixed;
+  top: 150px;
+  left: 450px;
+  width: 250px;
+  border-radius: 20px;
+}
+
+.forecast {
+  position: fixed;
+  bottom: 200px;
+  left: 450px;
+}
+
+.citySearch {
+  position: fixed;
+  top: 50px;
+  left: 450px;
+  margin-bottom: 20px;
+}
+.card {
+  position: fixed;
+  right: 450px;
+  bottom: 300px;
+  background-color: rgb(209, 196, 9);
+}
+
+.meteo {
+  border: 300px solid rgb(196, 209, 178);
+  padding: 0 auto;
+  margin: 10px 350px;
+  border-radius: 10px;
+}
+
+.units {
+  position: relative;
+  top: -34px;
+}
