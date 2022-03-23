@@ -18,7 +18,7 @@ h3 {
   position: fixed;
   top: 150px;
   left: 450px;
-  width: 250px;
+  width: 70px;
   border-radius: 20px;
 }
 
@@ -36,6 +36,7 @@ h3 {
 }
 .card {
   position: fixed;
+  width: 80px;
   right: 450px;
   bottom: 300px;
   background-color: rgb(209, 196, 9);
