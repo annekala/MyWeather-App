@@ -47,14 +47,15 @@ h3 {
   right: 450px;
   top: 280px;
   font: 12px;
-  background-color: rgb(209, 196, 9);
+  background-color: rgb(241, 206, 89);
 }
 .list-group-item {
   font-size: 12px;
-  color: #70757a;
+  color: #090a0a;
+  background-color: rgb(209, 213, 235);
 }
 .meteo {
-  border: 300px solid rgb(196, 209, 178);
+  border: 300px solid rgb(207, 210, 228);
   padding: 0 auto;
   margin: 10px 350px;
   border-radius: 10px;
