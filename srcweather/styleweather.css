@@ -1,25 +1,25 @@
 h1 {
   position: fixed;
-  top: 150px;
+  top: 120px;
   left: 450px;
   font-size: 55px;
 }
 h2 {
   position: fixed;
-  top: 210px;
+  top: 190px;
   right: 445px;
   font-size: 55px;
 }
 
 h3 {
   position: fixed;
-  top: 240px;
+  top: 210px;
   left: 450px;
   font-size: 20px;
 }
 .clouds {
   position: fixed;
-  top: 220px;
+  top: 200px;
   right: 550px;
   width: 50px;
   height: 50px;
@@ -28,7 +28,7 @@ h3 {
 
 .time {
   position: fixed;
-  top: 215px;
+  top: 180px;
   left: 450px;
 }
 .forecast {
@@ -46,7 +46,7 @@ h3 {
 .card {
   position: fixed;
   right: 450px;
-  top: 280px;
+  top: 265px;
   font: 12px;
   background-color: rgb(241, 206, 89);
 }
@@ -62,7 +62,7 @@ h3 {
   border-radius: 10px;
 }
 
-.tempUnits {
+.unit {
   position: relative;
   top: -25px;
   right: 10px;
