@@ -20,11 +20,13 @@ function formatDate(date) {
   return `${days[day]} ${hour}:${minutes}`;
 }
 function displayWeather(response) {
+  console.log(response.data);
   document.querySelector("#citty").innerHTML = response.data.name;
   document.querySelector("#temperature").innerHTML = Math.round(
     response.data.main.temp
   );
   document.querySelector("#humidity").innerHTML = response.data.main.humidity;
+  document.querySelector("#precipitation").innerHTML = response.data.rain;
   document.querySelector("#wind").innerHTML = Math.round(
     response.data.wind.speed
   );

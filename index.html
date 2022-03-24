@@ -20,12 +20,16 @@
       <div class="meteo">
         <h1 id="citty">Paris</h1>
         <p class="time" id="currentDate">Date</p>
-        <h2 id="temperature">19 <span class="units">°C</span></h2>
+        <h2 id="temperature">
+          19 <span class="tempUnits">°C | <a href="#">°F</a></span>
+        </h2>
         <h3 id="description">Partly Cloudy</h3>
 
-        <div class="card" style="width: 8rem">
+        <div class="card" style="width: 9rem">
           <ul class="list-group list-group-flush">
-            <li class="list-group-item">Precipitation:</li>
+            <li class="list-group-item">
+              Precipitation: <span id="precipitation"> 0% </span>
+            </li>
             <li class="list-group-item">
               Humidity: <span id="humidity"> 44 </span> %
             </li>
