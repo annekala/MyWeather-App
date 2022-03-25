@@ -25,7 +25,7 @@ function displayWeather(response) {
   celsiusTemperature = response.data.main.temp;
   document.querySelector("#temperature").innerHTML = `${Math.round(
     celsiusTemperature
-  )}`;
+  )} °C | °F`;
   document.querySelector("#humidity").innerHTML = response.data.main.humidity;
   document.querySelector("#precipitation").innerHTML = response.data.rain;
   document.querySelector("#wind").innerHTML = Math.round(
