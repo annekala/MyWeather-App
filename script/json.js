@@ -20,11 +20,9 @@ function formatDate(date) {
   return `${days[day]} ${hour}:${minutes}`;
 }
 function displayWeather(response) {
-  console.log(response.data);
   document.querySelector("#citty").innerHTML = response.data.name;
-  document.querySelector("#temperature").innerHTML = Math.round(
-    response.data.main.temp
-  );
+  document.querySelector("#temperature").innerHTML =
+    Math.round(celsiusTemperature);
   document.querySelector("#humidity").innerHTML = response.data.main.humidity;
   document.querySelector("#precipitation").innerHTML = response.data.rain;
   document.querySelector("#wind").innerHTML = Math.round(
@@ -33,6 +31,8 @@ function displayWeather(response) {
   document.querySelector("#description").innerHTML =
     response.data.weather[0].main;
 }
+
+celsiusTemperature = response.data.main.temp;
 
 function searchFor(city) {
   let apiKey = "24ac2360a2fa6e18066acab43e4b5d52";
@@ -75,11 +75,11 @@ function displaycelsiusTemperature(event) {
   temperatureElement.innerHTML = Math.round(celsiusTemperature);
 }
 
-let celsiusTemperature = null;
-
 let dateElement = document.querySelector("#currentDate");
 let now = new Date();
 dateElement.innerHTML = formatDate(now);
+
+let celsiusTemperature = null;
 
 let searchForm = document.querySelector("#searchCity");
 searchForm.addEventListener("submit", handleSearch);
