@@ -58,6 +58,21 @@ function getLocation(event) {
   searchLocation(position);
 }
 
+function displayFahrenheiTemperature(event) {
+  event.preventDefault();
+  let fahrenheitTemperature = (celsiusTemperature * 9) / 5 + 32;
+  let temperatureElement = document.querySelector("#temperature");
+  temperatureElement.innerHTML = Math.round(fahrenheitTemperature);
+}
+
+function displaycelsiusTemperature(event) {
+  event.preventDefault();
+  let temperatureElement = document.querySelector("#temperature");
+  temperatureElement.innerHTML = Math.round(celsiusTemperature);
+}
+
+let celsiusTemperature = null;
+
 let dateElement = document.querySelector("#currentDate");
 let now = new Date();
 dateElement.innerHTML = formatDate(now);
@@ -68,4 +83,9 @@ searchForm.addEventListener("submit", handleSearch);
 let currentForm = document.querySelector("#currentButton");
 currentForm.addEventListener("submit", getLocation);
 
+let celsiuslink = document.querySelector("#celsius - link");
+celsiuslink.addEventListener("click", displaycelsiusTemperature);
+
+let fahrenheitlink = document.querySelector("#Fareinheit-link");
+fahrenheitlink.addEventListener("click", displayFahrenheiTemperature);
 searchFor("New York");
