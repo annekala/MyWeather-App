@@ -18,31 +18,44 @@
   <body>
     <div class="container">
       <div class="meteo">
-        <h1 id="citty">Paris</h1>
-        <p class="time" id="currentDate">Date</p>
-        <h2 id="temperature">
-          19
-          <span class="unit">
-            <a href="#" id="celsius-link" class="active">°C </a>|
-            <a href="#" id="Fahrenheit-link">°F</a></span
-          >
-        </h2>
-        <h3 id="description">Partly Cloudy</h3>
-
-        <div class="card" style="width: 9rem">
-          <ul class="list-group list-group-flush">
-            <li class="list-group-item">
-              Precipitation: <span id="precipitation"> 0% </span>
+        <div class="row">
+          <div class="col-nd-6">
+            <h1 id="citty">Paris</h1>
+            <p class="time" id="currentDate">Date</p>
+            <h2 id="description">Partly Cloudy</h2>
+          </div>
+        </div>
+        <div class="col-nd-6">
+          <ul>
+            <li id="temperature">
+              <img
+                src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/029/365/original/clouds.jpeg?1647372081"
+                alt=""
+                class="clouds"
+              />
+              19
+              <span class="unit">
+                <a href="#" id="celsius-link" class="active">°C </a>|
+                <a href="#" id="Fahrenheit-link">°F</a></span
+              >
             </li>
-            <li class="list-group-item">
-              Humidity: <span id="humidity"> 44 </span> %
-            </li>
-            <li class="list-group-item">
-              Wind: <span id="wind"> 1 </span> km/h
+            <li>
+              <div class="card" style="width: 9rem">
+                <ul class="list-group list-group-flush">
+                  <li class="list-group-item">
+                    Precipitation: <span id="precipitation"> 0% </span>
+                  </li>
+                  <li class="list-group-item">
+                    Humidity: <span id="humidity"> 44 </span> %
+                  </li>
+                  <li class="list-group-item">
+                    Wind: <span id="wind"> 1 </span> km/h
+                  </li>
+                </ul>
+              </div>
             </li>
           </ul>
         </div>
-
         <form class="citySearch" id="searchCity">
           <div class="row">
             <div class="col-6">
@@ -72,11 +85,7 @@
             </div>
           </div>
         </form>
-        <img
-          src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/029/365/original/clouds.jpeg?1647372081"
-          alt=""
-          class="clouds"
-        />
+
         <div class="forecast">
           <div class="row">
             <div class="col-2"><strong>Sun</strong></div>

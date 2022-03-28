@@ -25,7 +25,7 @@ function displayWeather(response) {
   celsiusTemperature = response.data.main.temp;
   document.querySelector("#temperature").innerHTML = `${Math.round(
     celsiusTemperature
-  )} °C | °F`;
+  )}`;
   document.querySelector("#humidity").innerHTML = response.data.main.humidity;
   document.querySelector("#precipitation").innerHTML = response.data.rain;
   document.querySelector("#wind").innerHTML = Math.round(
@@ -49,7 +49,7 @@ function handleSearch(event) {
 }
 function searchLocation(position) {
   let apiKey = "24ac2360a2fa6e18066acab43e4b5d52";
-  let apiUrl = `https://api.openweathermap.org/data/2.5/weather?lat=${position.coords.latitude}&long=${position.coords.longitude}&appid=${apiKey}&units=metric`;
+  let apiUrl = `https://api.openweathermap.org/data/2.5/onecall?lat=${coordinates.lat}&long=${coordinates.lon}&appid=${apiKey}&units=metric`;
   axios.get(apiUrl).then(displayWeather);
 }
 
