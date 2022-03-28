@@ -1,58 +1,44 @@
+body {
+  font-family: arial, sans-serif;
+}
+
 h1 {
-  font-size: 55px;
-}
-h2 {
-  font-size: 55px;
-}
-
-h3 {
-  font-size: 20px;
-}
-.clouds {
-  width: 50px;
-  height: 50px;
-  border-radius: 20px;
-}
-
-.time {
-  font-size: 24px;
-}
-.forecast {
-  position: fixed;
-  bottom: 200px;
-  left: 450px;
-}
-
-.citySearch {
-  position: fixed;
-  top: 50px;
-  left: 450px;
-  margin-bottom: 20px;
-}
-.card {
-  font: 12px;
-  background-color: rgb(241, 206, 89);
-}
-.list-group-item {
-  font-size: 12px;
-  color: #090a0a;
-  background-color: rgb(207, 210, 228);
-}
-.meteo {
-  border: 300px solid rgba(238, 214, 214, 0.575);
-  padding: 0 auto;
-  margin: 10px 350px;
-  border-radius: 10px;
-}
-
-.unit {
-  position: relative;
-  top: -25px;
-  right: 10px;
-  font-size: 10px;
-  display: inline;
-  line-height: 24px;
+  font-size: 30px;
+  line-height: 28px;
+  font-weight: 100;
+  margin-bottom: 0;
   color: black;
+}
+
+h2 {
+  font-size: 30px;
+  line-height: 28px;
+  font-weight: 100;
+  margin-bottom: 0;
+  color: black;
+  text-align: right;
+  bottom: 300px;
+}
+ul {
+  margin: 0;
+  padding: 0;
+}
+li {
+  list-style: none;
+}
+
+.meteo {
+  border: 2px solid rgba(238, 214, 214, 0.575);
+  padding: 20px;
+  margin: 30px auto;
+  border-radius: 9px;
+  max-width: 600px;
+  background-color: rgba(238, 214, 214, 0.575);
+}
+
+.clouds {
+  width: 100px;
+  display: inline-block;
 }
 
 .codes {
@@ -60,11 +46,12 @@ h3 {
   margin: 10px 350px;
 }
 
-.active {
-  color: rgb(33, 33, 33);
-  cursor: default;
+.citySearch {
+  line-height: 24px;
+  margin-bottom: 20px;
 }
 
-.active:hover {
-  text-decoration: none;
+.shift {
+  text-align: right;
+  line-height: 30px;
 }

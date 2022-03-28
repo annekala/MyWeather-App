@@ -18,44 +18,6 @@
   <body>
     <div class="container">
       <div class="meteo">
-        <div class="row">
-          <div class="col-nd-6">
-            <h1 id="citty">Paris</h1>
-            <p class="time" id="currentDate">Date</p>
-            <h2 id="description">Partly Cloudy</h2>
-          </div>
-        </div>
-        <div class="col-nd-6">
-          <ul>
-            <li id="temperature">
-              <img
-                src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/029/365/original/clouds.jpeg?1647372081"
-                alt=""
-                class="clouds"
-              />
-              19
-              <span class="unit">
-                <a href="#" id="celsius-link" class="active">°C </a>|
-                <a href="#" id="Fahrenheit-link">°F</a></span
-              >
-            </li>
-            <li>
-              <div class="card" style="width: 9rem">
-                <ul class="list-group list-group-flush">
-                  <li class="list-group-item">
-                    Precipitation: <span id="precipitation"> 0% </span>
-                  </li>
-                  <li class="list-group-item">
-                    Humidity: <span id="humidity"> 44 </span> %
-                  </li>
-                  <li class="list-group-item">
-                    Wind: <span id="wind"> 1 </span> km/h
-                  </li>
-                </ul>
-              </div>
-            </li>
-          </ul>
-        </div>
         <form class="citySearch" id="searchCity">
           <div class="row">
             <div class="col-6">
@@ -85,11 +47,37 @@
             </div>
           </div>
         </form>
+        <div class="row">
+          <div class="col-md-6">
+            <h1 id="citty">Paris</h1>
+            <ul>
+              <li id="currentDate">Date</li>
+              <li id="description">Partly Cloudy</li>
+            </ul>
+          </div>
 
+          <div class="col-md-6">
+            <h2 id="temperature">
+              <img
+                src="http://openweathermap.org/img/wn/10d@2x.png"
+                alt="Clear"
+                class="clouds"
+                id="icon"
+              />
+              19
+            </h2>
+
+            <ul class="shift">
+              <li>Precipitation: <span id="precipitation"> 0% </span></li>
+              <li>Humidity: <span id="humidity"> 44 </span> %</li>
+              <li>Wind: <span id="wind"> 1 </span> km/h</li>
+            </ul>
+          </div>
+        </div>
         <div class="forecast">
           <div class="row">
-            <div class="col-2"><strong>Sun</strong></div>
-            <div class="col-2"><strong>Mon</strong></div>
+            <div class="col-2"><strong>Sun </strong></div>
+            <div class="col-2"><strong>Mon </strong></div>
 
             <div class="col-2"><strong>Tue</strong></div>
 
