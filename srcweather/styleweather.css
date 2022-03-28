@@ -30,6 +30,7 @@ li {
 .codes {
   display: block;
   margin: 10px 350px;
+  padding: auto;
 }
 
 .citySearch {
@@ -37,6 +38,9 @@ li {
   margin-bottom: 20px;
 }
 
+.element {
+  line-height: 20px;
+}
 .shift {
   text-align: right;
   line-height: 18px;
