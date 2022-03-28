@@ -34,11 +34,15 @@ function displayWeather(response) {
   );
   document.querySelector("#description").innerHTML =
     response.data.weather[0].main;
+
   iconElement.setAttribute(
-    "src",
+    (document.querySelector("#icon").innerHTML = "src"),
     `http://openweathermap.org/img/wn/${response.data.weather[0].icon}@2x.png`
   );
-  iconElement.setAttribute("alt", response.data.weather[0].main);
+  iconElement.setAttribute(
+    (document.querySelector("#icon").innerHTML = "alt"),
+    response.data.weather[0].main
+  );
 }
 
 function searchFor(city) {
@@ -95,8 +99,9 @@ let currentForm = document.querySelector("#currentButton");
 currentForm.addEventListener("submit", getLocation);
 
 let celsiuslink = document.querySelector("#celsius-link");
+celsiuslink.addEventListener("click", displaycelsiusTemperature);
 
 let fahrenheitlink = document.querySelector("#Fahrenheit-link");
-
+fahrenheitlink.addEventListener("click", displayFahrenheitTemperature);
 let iconElement = document.querySelector("#icon");
 searchFor("New York");

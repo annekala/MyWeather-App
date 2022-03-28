@@ -10,15 +10,6 @@ h1 {
   color: black;
 }
 
-h2 {
-  font-size: 30px;
-  line-height: 28px;
-  font-weight: 100;
-  margin-bottom: 0;
-  color: black;
-  text-align: right;
-  bottom: 300px;
-}
 ul {
   margin: 0;
   padding: 0;
@@ -36,11 +27,6 @@ li {
   background-color: rgba(238, 214, 214, 0.575);
 }
 
-.clouds {
-  width: 100px;
-  display: inline-block;
-}
-
 .codes {
   display: block;
   margin: 10px 350px;
@@ -54,4 +40,31 @@ li {
 .shift {
   text-align: right;
   line-height: 30px;
+}
+
+.active {
+  color: black;
+  cursor: default;
+}
+.active:hover {
+  text-decoration: none;
+}
+
+.show-temperature img {
+  margin-left: 50px;
+  height: 64px;
+  width: 100px;
+}
+.show-temperature strong {
+  font-size: 64px;
+  line-height: 1;
+  font-weight: 400;
+  margin-bottom: 0;
+  color: black;
+  text-align: right;
+}
+.units {
+  position: relative;
+  font-size: 16px;
+  top: -34px;
 }
