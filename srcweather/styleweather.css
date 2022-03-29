@@ -2,12 +2,12 @@ body {
   font-family: arial, sans-serif;
   background-image: linear-gradient(
       to bottom,
-      rgb(12, 52, 131) 0%,
+      #875df19c 0%,
       rgb(162, 182, 223) 100%,
       rgb(107, 140, 206) 100%,
       rgb(162, 182, 223) 100%
     ),
-    url("https://s3.amazonaws.com/shecodesio-production/uploads/files/000/029/365/original/clouds.jpeg?1647372081");
+    url("https://s3.amazonaws.com/shecodesio-production/uploads/files/000/030/332/original/background_pic_for_app.jpeg?1648526346");
 }
 
 h1 {
