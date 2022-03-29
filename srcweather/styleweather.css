@@ -39,13 +39,19 @@ li {
 }
 
 .element {
-  line-height: 20px;
+  line-height: 40px;
+}
+.element-clouds {
+  line-height: 5px;
 }
 .shift {
   text-align: right;
-  line-height: 18px;
+  line-height: 15px;
+  font-size: 13px;
 }
-
+.shift-temperature {
+  text-align: right;
+}
 .active {
   color: black;
   cursor: default;
@@ -75,4 +81,22 @@ li {
   position: relative;
   font-size: 14px;
   top: -24px;
+}
+
+.weather-forecast {
+  margin-top: 20px;
+  text-align: center;
+}
+
+.date-forecast {
+  font-size: 16px;
+  color: black;
+  opacity: 0.5;
+}
+
+.temperature-forecast {
+  font-size: 13px;
+}
+.temperature-forecast-min {
+  opacity: 0.5;
 }

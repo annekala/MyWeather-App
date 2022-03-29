@@ -50,24 +50,26 @@
         <div class="row">
           <div class="col-md-6">
             <h1 id="citty">Paris</h1>
-            <ul class="element">
-              <li id="currentDate">Date</li>
-              <li id="description">Partly Cloudy</li>
+            <ul>
+              <li class="element" id="currentDate">Date</li>
+              <li class="element-clouds" id="description">Partly Cloudy</li>
             </ul>
           </div>
 
           <div class="col-md-6">
             <div class="clearfix show-temperature">
-              <img
-                src="http://openweathermap.org/img/wn/10d@2x.png"
-                alt=""
-                id="icon"
-              />
-              <strong id="temperature"> </strong>
-              <span class="units">
-                <a href="#" id="celsius-link" class="active">°C </a>|
-                <a href="#" id="Fahrenheit-link">°F</a></span
-              >
+              <div class="shift-temperature">
+                <img
+                  src="http://openweathermap.org/img/wn/10d@2x.png"
+                  alt=""
+                  id="icon"
+                />
+                <strong id="temperature"> </strong>
+                <span class="units">
+                  <a href="#" id="celsius-link" class="active">°C </a>|
+                  <a href="#" id="Fahrenheit-link">°F</a></span
+                >
+              </div>
             </div>
             <ul class="shift">
               <li>Precipitation: <span id="precipitation"> 0% </span></li>
@@ -77,16 +79,73 @@
           </div>
         </div>
         <hr />
-        <div class="forecast">
+        <div class="weather-forecast">
           <div class="row">
-            <div class="col-2"><strong>Sun </strong></div>
-            <div class="col-2"><strong>Mon </strong></div>
+            <div class="col-2">
+              <div class="date-forecast">Sun</div>
 
-            <div class="col-2"><strong>Tue</strong></div>
+              <img
+                src="http://openweathermap.org/img/wn/10d@2x.png"
+                alt=""
+                width="42"
+              />
+              <div class="temperature-forecast">
+                <span class="temperature-forecast-min">12°</span>
+                <span class="temperature-forecast-max">18°</span>
+              </div>
+            </div>
+            <div class="col-2">
+              <div class="date-forecast">Mon</div>
 
-            <div class="col-2"><strong>Thu</strong></div>
+              <img
+                src="http://openweathermap.org/img/wn/10d@2x.png"
+                alt=""
+                width="42"
+              />
+              <div class="temperature-forecast">
+                <span class="temperature-forecast-min">12°</span>
+                <span class="temperature-forecast-max">18°</span>
+              </div>
+            </div>
+            <div class="col-2">
+              <div class="date-forecast">Tue</div>
 
-            <div class="col-1"><strong>Fri</strong></div>
+              <img
+                src="http://openweathermap.org/img/wn/10d@2x.png"
+                alt=""
+                width="42"
+              />
+              <div class="temperature-forecast">
+                <span class="temperature-forecast-min">12°</span>
+                <span class="temperature-forecast-max">18°</span>
+              </div>
+            </div>
+            <div class="col-2">
+              <div class="date-forecast">Wed</div>
+
+              <img
+                src="http://openweathermap.org/img/wn/10d@2x.png"
+                alt=""
+                width="42"
+              />
+              <div class="temperature-forecast">
+                <span class="temperature-forecast-min">12°</span>
+                <span class="temperature-forecast-max">18°</span>
+              </div>
+            </div>
+            <div class="col-2">
+              <div class="date-forecast">Thur</div>
+
+              <img
+                src="http://openweathermap.org/img/wn/10d@2x.png"
+                alt=""
+                width="42"
+              />
+              <div class="temperature-forecast">
+                <span class="temperature-forecast-min">12°</span>
+                <span class="temperature-forecast-max">18°</span>
+              </div>
+            </div>
           </div>
         </div>
       </div>
