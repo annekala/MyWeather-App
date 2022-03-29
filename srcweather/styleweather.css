@@ -1,5 +1,13 @@
 body {
   font-family: arial, sans-serif;
+  background-image: linear-gradient(
+      to bottom,
+      rgb(12, 52, 131) 0%,
+      rgb(162, 182, 223) 100%,
+      rgb(107, 140, 206) 100%,
+      rgb(162, 182, 223) 100%
+    ),
+    url("https://s3.amazonaws.com/shecodesio-production/uploads/files/000/029/365/original/clouds.jpeg?1647372081");
 }
 
 h1 {
@@ -24,7 +32,12 @@ li {
   margin: 30px auto;
   border-radius: 9px;
   max-width: 600px;
-  background-color: rgba(220, 236, 245, 0.575);
+  background: linear-gradient(
+    103deg,
+    rgb(235, 225, 188) 7.2%,
+    rgb(232, 188, 234) 57.5%,
+    rgb(203, 209, 244) 90.7%
+  );
 }
 
 .codes {
