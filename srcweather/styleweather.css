@@ -1,11 +1,11 @@
 body {
   font-family: arial, sans-serif;
   background-image: linear-gradient(
-      to bottom,
-      #875df19c 0%,
-      rgb(162, 182, 223) 100%,
-      rgb(107, 140, 206) 100%,
-      rgb(162, 182, 223) 100%
+      to top,
+      #d8b3b4 0%,
+      rgb(162, 182, 223) 70%,
+      rgb(107, 140, 206) 30%,
+      rgb(162, 182, 223) 30%
     ),
     url("https://s3.amazonaws.com/shecodesio-production/uploads/files/000/030/332/original/background_pic_for_app.jpeg?1648526346");
 }
@@ -97,14 +97,15 @@ li {
 }
 
 .weather-forecast {
-  margin-top: 20px;
+  margin-top: -10px;
   text-align: center;
+  padding: 10px auto;
 }
 
 .date-forecast {
   font-size: 16px;
   color: black;
-  opacity: 0.5;
+  opacity: 0.7;
 }
 
 .temperature-forecast {
