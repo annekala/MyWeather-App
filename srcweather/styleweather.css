@@ -55,6 +55,15 @@ li {
   margin-bottom: 20px;
 }
 
+.citySearch .btn {
+  background: #00175f;
+  color: white;
+  opacity: 0.8;
+}
+.citySearch .btn:hover {
+  background: #e4cacb;
+  color: black;
+}
 .element {
   line-height: 40px;
 }
