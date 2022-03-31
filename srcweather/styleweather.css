@@ -3,9 +3,9 @@ body {
   background-image: linear-gradient(
       to top,
       #d8b3b4 0%,
-      rgb(162, 182, 223) 70%,
-      rgb(107, 140, 206) 30%,
-      rgb(162, 182, 223) 30%
+      rgb(117, 37, 5) 100%,
+      rgb(89, 91, 107) 100%,
+      #bfa8d4 50%
     ),
     url("https://s3.amazonaws.com/shecodesio-production/uploads/files/000/030/332/original/background_pic_for_app.jpeg?1648526346");
 }
@@ -44,6 +44,9 @@ li {
   display: block;
   margin: 10px 350px;
   padding: auto;
+  text-align: center;
+  color: black;
+  font-size: 15px;
 }
 
 .citySearch {
@@ -100,12 +103,13 @@ li {
   margin-top: -10px;
   text-align: center;
   padding: 10px auto;
+  line-height: 20px;
 }
 
 .date-forecast {
   font-size: 16px;
   color: black;
-  opacity: 0.7;
+  opacity: 0.6;
 }
 
 .temperature-forecast {
