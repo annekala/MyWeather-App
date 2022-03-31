@@ -51,7 +51,7 @@ function displayForecast(response) {
               <div class="temperature-forecast">
                 <span class="temperature-forecast-min">${Math.round(
                   forecastDay.temp.min
-                )}°</span>
+                )}°</span>/
                 <span class="temperature-forecast-max">${Math.round(
                   forecastDay.temp.max
                 )}°</span>

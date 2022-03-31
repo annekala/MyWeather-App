@@ -1,13 +1,12 @@
 body {
   font-family: arial, sans-serif;
   background-image: linear-gradient(
-      to top,
-      #d8b3b4 0%,
-      rgb(117, 37, 5) 100%,
-      rgb(89, 91, 107) 100%,
-      #bfa8d4 50%
-    ),
-    url("https://s3.amazonaws.com/shecodesio-production/uploads/files/000/030/332/original/background_pic_for_app.jpeg?1648526346");
+    to top,
+    #d8b3b4 0%,
+    rgb(117, 37, 5) 100%,
+    rgb(89, 91, 107) 100%,
+    #bfa8d4 50%
+  );
 }
 
 h1 {
