@@ -17,6 +17,13 @@
   </head>
   <body>
     <div class="container">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1400 320">
+        <path
+          fill="#00175f"
+          fill-opacity="0.1"
+          d="M0,256L80,224C160,192,320,128,480,96C640,64,800,64,960,96C1120,128,1280,192,1360,224L1440,256L1440,0L1360,0C1280,0,1120,0,960,0C800,0,640,0,480,0C320,0,160,0,80,0L0,0Z"
+        ></path>
+      </svg>
       <div class="meteo">
         <form class="citySearch" id="searchCity">
           <div class="row">
@@ -38,45 +45,39 @@
             </div>
           </div>
         </form>
+
         <div class="row">
           <div class="col-md-6">
             <h1 id="citty">Paris</h1>
+
             <ul>
               <li class="element" id="currentDate">Date</li>
               <li class="element-clouds" id="description">Partly Cloudy</li>
             </ul>
           </div>
 
-          <div class="col-md-6">
-            <div class="clearfix show-temperature">
-              <div class="shift-temperature">
-                <img
-                  src="http://openweathermap.org/img/wn/10d@2x.png"
-                  alt=""
-                  id="icon"
-                />
-                <strong id="temperature"> </strong>
-                <span class="units">
-                  <a href="#" id="celsius-link" class="active">°C </a>|
-                  <a href="#" id="Fahrenheit-link">°F</a></span
-                >
-              </div>
+          <div class="clearfix show-temperature">
+            <div class="shift-temperature">
+              <img
+                src="http://openweathermap.org/img/wn/10d@2x.png"
+                alt=""
+                id="icon"
+              />
+              <strong id="temperature"> </strong>
+              <span class="units">
+                <a href="#" id="celsius-link" class="active">°C </a>|
+                <a href="#" id="Fahrenheit-link" class="active">°F</a></span
+              >
             </div>
-            <ul class="shift">
-              <li>Humidity: <span id="humidity"> 44 </span> %</li>
-              <li>Wind: <span id="wind"> 1 </span> mph</li>
-            </ul>
           </div>
+          <ul class="shift">
+            <li>Humidity: <span id="humidity"> 44 </span> %</li>
+            <li>Wind: <span id="wind"> 1 </span> mph</li>
+          </ul>
         </div>
 
         <br />
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 -150 1440 320">
-          <path
-            fill="#68848b"
-            fill-opacity="1"
-            d="M0,160L60,160C120,160,240,160,360,133.3C480,107,600,53,720,58.7C840,64,960,128,1080,154.7C1200,181,1320,171,1380,165.3L1440,160L1440,0L1380,0C1320,0,1200,0,1080,0C960,0,840,0,720,0C600,0,480,0,360,0C240,0,120,0,60,0L0,0Z"
-          ></path>
-        </svg>
+
         <hr />
         <div class="weather-forecast" id="forecast">
           <div class="row">
@@ -96,20 +97,21 @@
           </div>
         </div>
         <hr />
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 200 1440 100">
-          <path
-            fill="#68848b"
-            fill-opacity="1"
-            d="M0,224L80,240C160,256,320,288,480,277.3C640,267,800,213,960,208C1120,203,1280,245,1360,266.7L1440,288L1440,320L1360,320C1280,320,1120,320,960,320C800,320,640,320,480,320C320,320,160,320,80,320L0,320Z"
-          ></path>
-        </svg>
       </div>
+
       <p class="codes">
         This project was coded by Anne Kala and is
         <a href="https://github.com/annekala/MyWeather-App" target="_blank">
           open-sourced on GitHub
         </a>
       </p>
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1400 320">
+        <path
+          fill="#702A19"
+          fill-opacity="0.3"
+          d="M0,32L120,53.3C240,75,480,117,720,117.3C960,117,1200,75,1320,53.3L1440,32L1440,320L1320,320C1200,320,960,320,720,320C480,320,240,320,120,320L0,320Z"
+        ></path>
+      </svg>
     </div>
     <script src="script/json.js"></script>
   </body>

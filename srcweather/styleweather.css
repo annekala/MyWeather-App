@@ -11,11 +11,11 @@ body {
 }
 
 h1 {
-  font-size: 37px;
+  font-size: 40px;
   line-height: 28px;
-  font-weight: 100;
+  font-weight: 700;
   margin-bottom: 0;
-  color: black;
+  color: #00175f;
 }
 
 ul {
@@ -24,14 +24,15 @@ ul {
 }
 li {
   list-style: none;
+  opacity: 0.8;
 }
 
 .meteo {
   border: 2px solid rgba(238, 214, 214, 0.575);
   padding: 20px;
-  margin: 30px auto;
+  margin: 10px auto;
   border-radius: 9px;
-  max-width: 600px;
+  max-width: 650px;
   background: linear-gradient(
     103deg,
     rgb(235, 225, 188) 7.2%,
@@ -61,20 +62,22 @@ li {
   line-height: 5px;
 }
 .shift {
-  text-align: right;
+  text-align: center;
   line-height: 15px;
   font-size: 13px;
 }
 .shift-temperature {
-  text-align: right;
+  text-align: center;
 }
+
 .active {
   color: black;
   cursor: default;
   text-decoration: none;
 }
 .active:hover {
-  color: blue;
+  text-decoration: underline;
+  cursor: pointer;
 }
 
 .show-temperature img {
@@ -82,14 +85,14 @@ li {
   height: 100px;
   width: 100px;
   display: inline-block;
-  line-height: 100px;
+  line-height: 300px;
   vertical-align: top;
 }
 .show-temperature strong {
   font-size: 45px;
   line-height: 100px;
-  font-weight: 400;
-  color: black;
+  font-weight: 700;
+  color: #00175f;
   text-align: right;
   margin-bottom: 0;
 }
@@ -108,12 +111,13 @@ li {
 
 .date-forecast {
   font-size: 16px;
-  color: black;
+  color: #00175f;
   opacity: 0.6;
 }
 
 .temperature-forecast {
   font-size: 13px;
+  color: #00175f;
 }
 .temperature-forecast-min {
   opacity: 0.5;
