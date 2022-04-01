@@ -1,11 +1,9 @@
 body {
   font-family: arial, sans-serif;
   background-image: linear-gradient(
-    to top,
-    #d8b3b4 0%,
-    rgb(117, 37, 5) 100%,
-    rgb(89, 91, 107) 100%,
-    #bfa8d4 50%
+    to bottom,
+    rgb(117, 46, 23) 10%,
+    rgb(212, 216, 245) 90%
   );
 }
 
@@ -28,7 +26,6 @@ li {
 
 .meteo {
   border: 2px solid rgba(238, 214, 214, 0.575);
-
   padding: 20px;
   margin: 10px auto;
   border-radius: 9px;
